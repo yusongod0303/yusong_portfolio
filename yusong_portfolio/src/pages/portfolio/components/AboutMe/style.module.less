@@ -1,0 +1,88 @@
+@import '@/global.less';
+
+.wrapper {
+  .wrapper;
+  overflow-x: hidden;
+}
+
+.codeWrapper {
+  margin-top: 30px;
+
+  .code {
+    background-color: #272822;
+    text-align: left;
+    padding: 10px 35px;
+    width: 180px;
+    display: inline-block;
+    border-radius: 5px;
+    color: #f8f8f2;
+    font-family: 'Ubuntu Mono', monospace;
+
+    .comment {
+      font-style: italic;
+      color: #708090;
+    }
+
+    .function {
+      color: #e6db74;
+    }
+
+    .boolean {
+      color: #ae81ff;
+    }
+
+    .keyword {
+      color: #66d9ef;
+    }
+  }
+}
+
+.introWrapper {
+  margin-top: 30px;
+  position: relative;
+  font-family: 'RIDIBatang';
+
+  .mainPoint {
+    font-family: 'GongGothicMedium';
+    font-size: 20px;
+    font-weight: 500;
+    color: #444;
+    line-height: 160%;
+    font-style: italic;
+
+    > span {
+      color: @text-point-color;
+    }
+  }
+
+  .mainPoint:before {
+    content: '\275D';
+    display: inline-block;
+    margin-right: 5px;
+  }
+
+  .mainPoint:after {
+    content: '\275E';
+    display: inline-block;
+    margin-left: 5px;
+  }
+
+  .intro {
+    margin: 30px auto 0;
+    max-width: 1000px;
+    text-align: justify;
+    line-height: 1.7em;
+
+    .withColor {
+      color: @text-point-color;
+      font-weight: 800;
+      margin: 0 5px;
+    }
+
+    .codeBlock {
+      padding: 2px 4px;
+      background-color: #f0f0f0;
+      border-radius: 3px;
+    }
+  }
+}

@@ -1,0 +1,127 @@
+@icon-background: #f0f0f0;
+@proficiency-text-color: #fff;
+@proficiency-background: #000;
+
+.skillIcon {
+  text-align: center;
+  display: inline-block;
+  width: 100px;
+  height: 100px;
+  border-radius: 25px;
+  background-color: @icon-background;
+
+  font-size: 15px;
+  font-weight: 500;
+  position: relative;
+  overflow: hidden;
+
+  > div:first-child {
+    width: 48px;
+    height: 48px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center center;
+    margin: 15px auto 4px;
+  }
+
+  .proficiency {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    color: @proficiency-text-color;
+    background-color: @proficiency-background;
+    opacity: 0.7;
+    text-align: center;
+    visibility: hidden;
+    line-height: 100px;
+  }
+
+  &:hover {
+    box-shadow: 0 3px 6px rgb(0 0 0 / 20%), 0 3px 6px rgb(0 0 0 / 20%);
+
+    .proficiency {
+      visibility: inherit;
+    }
+  }
+}
+
+.tooltip {
+  white-space: pre-line;
+}
+
+.scala {
+  background: url('@/images/skills/languages/scala.png');
+}
+
+.typescript {
+  background: url('@/images/skills/languages/typescript.png');
+  border-radius: 5px;
+}
+
+.javascript {
+  background: url('@/images/skills/languages/javascript.png');
+  border-radius: 5px;
+}
+
+.kotlin {
+  background: url('@/images/skills/languages/kotlin.png');
+  border-radius: 1px;
+}
+
+.python {
+  background: url('@/images/skills/languages/python.png');
+}
+
+.bash {
+  background: url('@/images/skills/languages/bash.png');
+}
+
+.akka {
+  background: url('@/images/skills/frameworks/akka.png');
+}
+
+.reactjs {
+  background: url('@/images/skills/frameworks/reactjs.png');
+}
+
+.vuejs {
+  background: url('@/images/skills/frameworks/vuejs.png');
+}
+
+.nodejs {
+  background: url('@/images/skills/frameworks/nodejs.png');
+}
+
+.spring {
+  background: url('@/images/skills/frameworks/spring.png');
+}
+
+.nodejs {
+  background: url('@/images/skills/frameworks/nodejs.png');
+}
+
+.oracle {
+  background: url('@/images/skills/databases/oracle.png');
+}
+
+.mysql {
+  background: url('@/images/skills/databases/mysql.png');
+}
+
+.git {
+  background: url('@/images/skills/etc/git.png');
+}
+
+.docker {
+  background: url('@/images/skills/etc/docker.png');
+}
+
+.kubernetes {
+  background: url('@/images/skills/etc/kubernetes.png');
+}
+
+.jenkins {
+  background: url('@/images/skills/etc/jenkins.png');
+}

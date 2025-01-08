@@ -1,0 +1,28 @@
+@import '@/global.less';
+
+.wrapper {
+  .wrapper;
+  background-color: @wrapper-darker-color;
+}
+
+.skillSetList {
+  max-width: 1000px;
+  margin: 0 auto;
+
+  .skillSet {
+    > h3 {
+      font-size: 25px;
+      font-weight: 300;
+      margin-bottom: 20px;
+    }
+
+    .skillItem {
+      display: inline-block;
+      margin: 0 7px;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 30px;
+    }
+  }
+}

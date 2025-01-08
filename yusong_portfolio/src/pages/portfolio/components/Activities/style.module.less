@@ -1,0 +1,67 @@
+@import '@/global.less';
+
+.wrapper {
+  .wrapper;
+  border: 0;
+}
+
+.activityList {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.activityWrapper {
+  margin: 0 auto 30px auto;
+  padding: 15px;
+  border: 1px solid #dcd9d9;
+  text-align: left;
+
+  .titleBox {
+    display: flex;
+    justify-content: space-between;
+
+    .title {
+      font-weight: 500;
+      margin: 0;
+      color: #374054;
+      font-size: 1.17em;
+      font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+    }
+    .subTitle {
+      color: #74808a;
+      font-weight: 300;
+      margin: 0 0 15px 0;
+      font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+    }
+    .datePeriod {
+      color: #74808a;
+      font-weight: 300;
+    }
+  }
+
+  .activity {
+    color: #74808a;
+    font-size: 0.9em;
+    font-weight: 300;
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+    margin: 0;
+    > p.desc {
+      text-align: justify;
+    }
+
+    > ul.desc {
+      margin: 0;
+      padding: 0 0 0 20px;
+
+      a {
+        text-decoration: none;
+        color: inherit;
+      }
+
+      a:hover {
+        text-decoration: underline;
+        color: @text-point-color;
+      }
+    }
+  }
+}

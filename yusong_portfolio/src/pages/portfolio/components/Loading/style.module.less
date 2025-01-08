@@ -1,0 +1,52 @@
+.loadingPage {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: monospace;
+  color: #fff;
+  background-color: #000;
+
+  .loading {
+    border: 3px solid #fff;
+    padding: 10px;
+    margin: 20px;
+    position: relative;
+    width: 400px;
+    max-width: 100%;
+  }
+
+  .loading::after {
+    background-color: #fff;
+    content: '';
+    position: absolute;
+    mix-blend-mode: difference;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    transform: scaleX(0);
+    transform-origin: center left;
+    animation: grow 5s linear infinite;
+  }
+
+  @-webkit-keyframes grow {
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  @keyframes grow {
+    to {
+      transform: scaleX(1);
+    }
+  }
+
+  h1 {
+    margin: 0;
+    letter-spacing: 5px;
+    text-align: center;
+    padding-left: 8px;
+  }
+}

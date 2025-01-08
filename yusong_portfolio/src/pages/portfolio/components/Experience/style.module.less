@@ -1,0 +1,122 @@
+@import '@/global.less';
+
+.wrapper {
+  .wrapper;
+  background-color: @wrapper-darker-color;
+  padding-bottom: 100px;
+  overflow-x: hidden;
+}
+
+.experienceWrapper {
+  margin: 30px auto 0 auto;
+  position: relative;
+
+  .datePeriod {
+    width: 25%;
+    text-align: right;
+    position: absolute;
+    left: 0;
+    top: 10px;
+    font-weight: 300;
+    color: #374054;
+    line-height: 50px;
+  }
+
+  .icon {
+    position: absolute;
+    left: calc(25% + 25px);
+    top: 10px;
+    width: 50px;
+    height: 50px;
+    display: block;
+    border-radius: 50%;
+    line-height: 61px;
+    background-color: #40a9ff;
+    > svg {
+      color: #fff;
+    }
+  }
+
+  .experience {
+    margin-left: calc(25% + 105px);
+    background: #fff;
+    border: 1px solid #e6e6e6;
+    padding: 15px;
+    border-radius: 3px;
+    text-align: justify;
+    font-family: 'Spoqa Han Sans', 'Spoqa Han Sans JP', 'Sans-serif';
+
+    .title {
+      font-size: 1.5em;
+      font-weight: 300;
+      color: #374054;
+      display: inline-block;
+      margin: 0;
+    }
+
+    .subTitle {
+      font-size: 1.2em;
+      font-weight: 200;
+      color: #7e8890;
+      margin: 0 0 15px 0;
+    }
+
+    .desc {
+      color: #74808a;
+      font-size: 0.9em;
+      margin: 0;
+      font-weight: 200;
+    }
+
+    .projectList {
+      margin: 15px 0 0;
+
+      > span {
+        color: #74808a;
+        font-size: 0.9em;
+        font-weight: 200;
+      }
+
+      > ul {
+        padding: 5px 0 0 25px;
+
+        > li {
+          color: #74808a;
+          font-size: 0.8em;
+          font-weight: 200;
+        }
+      }
+    }
+  }
+}
+
+.experienceList {
+  position: relative;
+  margin: 0 auto;
+  position: relative;
+  max-width: 1000px;
+}
+
+.experienceList:before {
+  position: absolute;
+  content: '';
+  top: 15px;
+  bottom: 0;
+  left: calc(25% + 49px);
+  right: auto;
+  height: calc(100% - 15px);
+  width: 3px;
+  background: #40a9ff;
+  z-index: 0;
+}
+
+.experienceList:after {
+  position: absolute;
+  content: '';
+  width: 3px;
+  height: 40px;
+  background: #40a9ff;
+  background: linear-gradient(to bottom, #40a9ff, rgba(#40a9ff, 0));
+  top: 100%;
+  left: calc(25% + 49px);
+}
