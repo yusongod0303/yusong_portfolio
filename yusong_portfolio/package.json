@@ -1,5 +1,5 @@
 {
-  "homepage": "https://yusongod0303.github.io/yusong_portfolio",
+  "homepage": "https://yusongod0303/yusong_portfolio",
   "name": "jisonglee.github.io",
   "version": "1.0.0",
   "description": "",
@@ -11,13 +11,13 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://yusongod0303.github.io/yusong_portfolio.git.io"
+    "url": "git+https://yusongod0303/yusong_portfolio.git.io"
   },
   "keywords": [],
   "author": "Jisong Lee <jisonglee7@gmail.com>",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/jisonglee/jisonglee.github.io/issues"
+    "url": "https://github.com/yusongod0303/yusong_portfolio.git.io/issues"
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.34",
