@@ -1,6 +1,6 @@
 {
   "homepage": "https://yusongod0303/yusong_portfolio",
-  "name": "jisonglee.github.io",
+  "name": "yusong_portfolio.github.io",
   "version": "1.0.0",
   "description": "",
   "scripts": {
@@ -14,7 +14,7 @@
     "url": "git+https://yusongod0303/yusong_portfolio"
   },
   "keywords": [],
-  "author": "Jisong Lee <jisonglee7@gmail.com>",
+  "author": "Jisong Lee <yusongod@naver.com>",
   "license": "ISC",
   "bugs": {
     "url": "https://github.com/yusongod0303/yusong_portfolio/issues"
