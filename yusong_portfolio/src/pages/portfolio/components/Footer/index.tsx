@@ -19,12 +19,12 @@ const Footer: React.FC<FooterProps> = (props) => {
       </div>
       <div className={styles.content}>
         <div className={styles.copyright}>
-          <span>Copyright &copy; 2021 Jisong Lee</span>
+          <span>Copyright &copy; 2025 Yusong Lee</span>
         </div>
         <div className={styles.link}>
           <ul className={styles.iconList}>
             <li className={styles.icon}>
-              <a href="https://github.com/jisonglee" target="_blank" className={styles.gitHub}>
+              <a href="https://github.com/yusongod0303" target="_blank" className={styles.gitHub}>
                 <img src={gitHubImage} />
               </a>
             </li>

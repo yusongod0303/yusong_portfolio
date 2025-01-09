@@ -45,11 +45,11 @@ const Education = React.forwardRef<HTMLDivElement>((props, ref) => {
 
   const contentList: EducationContent[] = [
     {
-      datePeriod: 'Mar 2013 - Feb 2017',
+      datePeriod: 'Mar 2018 - Feb 2024',
       title: '강원대학교',
-      subTitle: '컴퓨터과학과 학사 졸업 (4.16/4.5)',
+      subTitle: '컴퓨터과학과 학사 졸업',
       desc:
-        '알고리즘, 자료구조, 데이터베이스, 운영체제, 컴퓨터네트워크 등을 비롯한 컴퓨터과학 분야 전공 과목들을 이수하였습니다.',
+        '인공지능, 기계학습, 데이터베이스, 데이터 분석 프로그래밍, 웹 프로그래밍, 알고리즘 등을 비롯한 컴퓨터과학 분야 전공 과목들을 이수하였습니다.',
     },
   ];
 

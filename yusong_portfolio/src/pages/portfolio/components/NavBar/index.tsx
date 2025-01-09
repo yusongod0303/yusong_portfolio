@@ -40,7 +40,7 @@ const NavBar: React.FC<NavBarProps> = (props) => {
           .filter((e) => e !== NavEnum.Projects)
           .map((e) => renderChildById(e))}
         <li key="blog" className={styles.current}>
-          <a href="https://velog.io/@widy" target="_blank">
+          <a href="https://velog.io/@yusongod0303" target="_blank">
             {'Blog'}
           </a>
         </li>

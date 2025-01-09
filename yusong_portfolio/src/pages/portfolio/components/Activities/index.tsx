@@ -11,9 +11,13 @@ const Activities = React.forwardRef<HTMLDivElement>((props, ref) => {
           React.createElement(
             'li',
             { key: `${idx}-${i}` },
-            <a href={e.link} target="_blank">
-              {e.content}
-            </a>,
+            e.link ? (
+              <a href={e.link} target="_blank" rel="noopener noreferrer">
+                {e.content}
+              </a>
+            ) : (
+              e.content
+            ),
           ),
         )}
       </ul>
@@ -46,33 +50,43 @@ const Activities = React.forwardRef<HTMLDivElement>((props, ref) => {
   const contentList: ActivityContent[] = [
     {
       datePeriod: '',
-      title: 'AWS 공인 교육 과정',
-      subTitle: '수료한 과정 목록:',
+      title: '자격증 획득',
+      subTitle: '획득한 자격증 목록:',
       desc: [
         {
-          content: 'AWS 기반 데브옵스 엔지니어링 (Feb 2020)',
-          link: 'https://aws.amazon.com/ko/training/course-descriptions/devops-engineering/',
+          content: '정보처리기사 (Jun 2024)',
+          link: '',
         },
         {
-          content: 'AWS 기반 개발 (Nov 2019)',
-          link: 'https://aws.amazon.com/ko/training/course-descriptions/developing/',
+          content: 'SQL 개발자 - SQLD (Sep 2024)',
+          link: '',
+        },
+        {
+          content: '데이터 분석 준전문가 - ADsP (Sep 2024)',
+          link: '',
         },
       ],
     },
     {
-      datePeriod: 'Nov 2016',
-      title: '강원대 IT대학 졸업 및 전공작품 경진대회 최우수상',
-      subTitle: '프레젠테이션 기능 중심 PC 원격 제어 앱',
+      datePeriod: 'Jul 2024 - 2025 Jan',
+      title: 'LG U+ WHY NOT SW CAMP 빅데이터&클라우드 2기',
+      subTitle: '신재생 에너지 설비(접속반) 건전성 평가 모델 개발',
       desc: [
-        'Windows API(C++) 기반 서버 프로그램 개발을 담당했습니다.',
-        '앱 클라이언트로부터 동작 센서 값을 UDP로 전송받아 화면 원격 조종 및 페인팅 기능을 구현하였습니다.',
+        '클라우드 기초 지식 및 통계 기본 지식에 대해 학습하였습니다.',
+        'docker 및 aws 에 대해 학습하였습니다.',
+        'git을 활용한 협업 관리에 대해 학습하였습니다.',
+        '파이썬 기초 프로그래밍 및 flask와 fastapi를 활용한 웹 프레임워크에 대해 학습하였습니다.',
+        '3개의 미니 프로젝트 및 서비스 기획, 대형 프로젝트 1회 참여하였습니다.',
       ].join(' '),
     },
     {
-      datePeriod: 'Mar 2013 - Feb 2017',
-      title: '네리프(Neriff) 동아리 활동',
-      subTitle: '강원대 정보보호 동아리',
-      desc: ['정보보호 관련 스터디 활동과 과내 세미나 진행 및 참여'].join(' '),
+      datePeriod: 'Sep 2022',
+      title: '제 10회 공공데이터 활용 비즈니스 아이디어 공모전 - 빅데이터 분석 부문 - 장려상',
+      subTitle: '신재생 에너지 설비(접속반) 건전성 평가 모델 개발',
+      desc: [
+        '접속반 고장을 미리 예측하여 주의, 경고, 위험을 알려주는 모델을 개발했습니다.',
+        '랜덤포레스트와 회귀 분석을 이용하여 모델을 개발했고 두 모델을 평가하여 성능이 더 뛰어난 선형 회귀를 이용했습니다.',
+      ].join(' '),
     },
   ];
 
