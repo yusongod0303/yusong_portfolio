@@ -47,7 +47,7 @@ const Education = React.forwardRef<HTMLDivElement>((props, ref) => {
     {
       datePeriod: 'Mar 2018 - Feb 2024',
       title: '강원대학교',
-      subTitle: '컴퓨터과학과 학사 졸업',
+      subTitle: '컴퓨터과학전공 학사 졸업',
       desc:
         '인공지능, 기계학습, 데이터베이스, 데이터 분석 프로그래밍, 웹 프로그래밍, 알고리즘 등을 비롯한 컴퓨터과학 분야 전공 과목들을 이수하였습니다.',
     },

@@ -46,7 +46,7 @@ const AboutMe = React.forwardRef<HTMLDivElement, AboutProps>((props, ref) => {
       <div className={styles.introWrapper}>
         <Animate translateX={toggled ? 0 : -width} friction={80} tension={500}>
           <p className={styles.mainPoint}>
-            데이터를 이용하여 <span>가치</span>를 창출하는 모든 과정에 큰<span></span><span>분석, </span><span>파이프라인 구축</span>
+            데이터를 이용하여 <span>가치</span>를 창출하는 모든 과정인<span></span><span>분석, </span><span>파이프라인 구축</span>
             <span>모델링</span>까지 데이터를 이용한 가치를 창출하는 전 과정을 수행할 수 있는 <span>데이터 사이언티스트</span>입니다.
   
           </p>

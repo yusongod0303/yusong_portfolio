@@ -9,3 +9,7 @@ export const Oracle: React.FC<SkillIconProps> = (props) => {
 export const Mysql: React.FC<SkillIconProps> = (props) => {
   return <SkillIcon imageClassName={styles.mysql} {...props} />;
 };
+
+export const MongoDB: React.FC<SkillIconProps> = (props) => {
+  return <SkillIcon imageClassName={styles.mongodb} {...props} />;
+};

@@ -2,10 +2,10 @@ import React from 'react';
 import { NavEnum } from '../../data';
 import { SkillItem, SkillSet, SkillProficiency } from './model';
 import styles from './style.module.less';
-import { Scala, Typescript, Javascript, Kotlin, Python, Bash } from './components/Language';
-import { Akka, ReactJS, NodeJS, Spring, VueJS } from './components/Framework';
-import { Oracle, Mysql } from './components/Database';
-import { Git, Docker, Kubernetes, Jenkins } from './components/OtherSkill';
+import { Scala, Python, Bash, SQL } from './components/Language';
+import { Airflow, Brightics, Excel, AWS } from './components/Framework';
+import { Oracle, Mysql, MongoDB } from './components/Database';
+import { Git, Docker, Kubernetes } from './components/OtherSkill';
 
 const skillSets: SkillSet[] = [
   {
@@ -15,25 +15,25 @@ const skillSets: SkillSet[] = [
         title: 'Scala',
         imageNode: <Scala id="scala" />,
         proficiency: SkillProficiency.Familiar,
-        tags: ['#만_4년을_함께'],
+        tags: ['#빅데이터_처리_가능'],
       },
       {
-        title: 'Typescript',
-        imageNode: <Typescript id="typescript" />,
-        proficiency: SkillProficiency.Familiar,
-        tags: ['#JS보다_TS_선호'],
-      },
-      {
-        title: 'Javascript',
-        imageNode: <Javascript id="javascript" />,
+        title: 'Python',
+        imageNode: <Python id="python" />,
         proficiency: SkillProficiency.Familiar,
         tags: ['#현재_주_언어'],
+      },
+      {
+        title: 'SQL',
+        imageNode: <SQL id="sql" />,
+        proficiency: SkillProficiency.Familiar,
+        tags: ['#query문_및_DB_관리'],
       },
       {
         title: 'Bash',
         imageNode: <Bash id="bash" />,
         proficiency: SkillProficiency.Familiar,
-        tags: ['#쉘스크립트_작성_가능'],
+        tags: ['#클라우드_기반_엔지니어링'],
       },
     ],
   },
@@ -41,28 +41,28 @@ const skillSets: SkillSet[] = [
     title: 'Platform / Framework',
     items: [
       {
-        title: 'Akka',
-        imageNode: <Akka id="akka" />,
+        title: 'Airflow',
+        imageNode: <Airflow id="airflow" />,
         proficiency: SkillProficiency.Familiar,
-        tags: ['#Scala_Akka_조합'],
+        tags: ['#파이프라인_구축'],
       },
       {
-        title: 'React',
-        imageNode: <ReactJS id="reactjs" />,
+        title: 'Brightics',
+        imageNode: <Brightics id="brightics" />,
         proficiency: SkillProficiency.Familiar,
         tags: [],
       },
       {
-        title: 'Node.js',
-        imageNode: <NodeJS id="nodejs" />,
+        title: 'Excel',
+        imageNode: <Excel id="excel" />,
         proficiency: SkillProficiency.Familiar,
-        tags: [],
+        tags: ['#EDA, 데이터_분석'],
       },
       {
-        title: 'Vue',
-        imageNode: <VueJS id="spring" />,
+        title: 'AWS',
+        imageNode: <AWS id="AWS" />,
         proficiency: SkillProficiency.Familiar,
-        tags: [],
+        tags: ['파이프라인_구축, 배포'],
       },
     ],
   },
@@ -76,6 +76,10 @@ const skillSets: SkillSet[] = [
       {
         title: 'MySQL',
         imageNode: <Mysql id="mysql" />,
+      },
+      {
+        title: 'MongoDB',
+        imageNode: <MongoDB id="mongodb" />,
       },
     ],
   },
@@ -97,12 +101,6 @@ const skillSets: SkillSet[] = [
       {
         title: 'Kubernetes',
         imageNode: <Kubernetes id="kubernetes" />,
-        proficiency: SkillProficiency.Familiar,
-        tags: [],
-      },
-      {
-        title: 'Jenkins',
-        imageNode: <Jenkins id="jenkins" />,
         proficiency: SkillProficiency.Familiar,
         tags: [],
       },

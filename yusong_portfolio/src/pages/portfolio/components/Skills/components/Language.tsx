@@ -25,3 +25,7 @@ export const Python: React.FC<SkillIconProps> = (props) => {
 export const Bash: React.FC<SkillIconProps> = (props) => {
   return <SkillIcon imageClassName={styles.bash} {...props} />;
 };
+
+export const SQL: React.FC<SkillIconProps> = (props) => {
+  return <SkillIcon imageClassName={styles.sql} {...props} />;
+};
